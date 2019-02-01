@@ -1,4 +1,5 @@
 import React from 'react';
+import InfoBubble from 'components/info-bubble';
 import './index.scss';
 
 const DateNav = ({ imageUrl, eventName, date, location, price, isNextOneUp, _ref }) => (
@@ -13,7 +14,7 @@ const DateNav = ({ imageUrl, eventName, date, location, price, isNextOneUp, _ref
         <span className="location">{location}</span>
         <div className="price-wrapper">
           <span className="prices">{price.prices}</span>
-          { price.description && <span className="info-bubble">?</span> }
+          { price.description && <InfoBubble helptext={price.description}/> }
         </div>
       </div>
     </div>

@@ -75,23 +75,8 @@
       color: $light-text-color;
     }
 
-    .info-bubble {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-
-      width: 15px;
-      height: 15px;
-
-      font-size: 8px;
-      font-weight: 500px;
-
-      color: #fff;
-      background-color: #093E7B;
-
-      border-radius: 50%;
-
-      margin-left: 20px;
+    .prices {
+      margin-right: 20px;
     }
   }
 }

@@ -1,0 +1,51 @@
+@import 'commons/css/variables.scss';
+
+.info-bubble {
+  position: relative;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 15px;
+  height: 15px;
+
+  font-size: 8px;
+  font-weight: 500px;
+
+  color: #fff;
+  background-color: #093E7B;
+
+  border-radius: 50%;
+
+  .helptext {
+    $arrow-size: 5px;
+
+    position: absolute;
+    top: -$arrow-size;
+    right: -4px;
+    width: 150px;
+
+    transform: translateY(-100%);
+
+    background: $dark-gradient;
+    color: $light-text-color;
+
+    padding: 5px;
+
+    font-size: 13px;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border: $arrow-size solid transparent;
+      border-top-color: $dark-color;
+      position: absolute;
+      right: 5px;
+      bottom: 0;
+      transform: translateY(100%);
+    }
+  }
+}
