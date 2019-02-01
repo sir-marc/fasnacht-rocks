@@ -1,6 +1,8 @@
-require('dotenv').config()
+require("dotenv").config({
+  path: `.env`,
+})
 const graphqlToken = process.env.CRAFTQL_API_KEY;
-const apiUrl = process.env.API_URL;
+const apiUrl = process.env.GATSBY_BACKEND_URL + '/api';
 
 console.log(apiUrl)
 

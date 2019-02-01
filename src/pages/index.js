@@ -86,7 +86,7 @@ const IndexPage = () => {
                           date={eventDate}
                           location={eventEntry.location}
                           price={eventEntry.price[0] || {}}
-                          imageUrl={eventEntry.image[0] ? eventEntry.image[0].url : ''}
+                          imageUrl={eventEntry.image[0] ? process.env.GATSBY_BACKEND_URL + eventEntry.image[0].url : ''}
                         />
                       )
                     }
