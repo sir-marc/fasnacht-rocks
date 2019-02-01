@@ -1,13 +1,16 @@
 import React from 'react';
 import './index.scss';
 
+const pad = num => {
+  return num < 10 ? "0" + num : num
+}
+
 const formatDate = timestamp => {
   const date = new Date(timestamp * 1000);
   const day = date.getDate()
   const month = date.getMonth() + 1;
-  const paddedMonth = month < 10 ? '0' + month : month
   const year = date.getFullYear();
-  return `${day}.${paddedMonth}.${year}`
+  return `${pad(day)}.${pad(month)}.${year}`
 }
 
 const DateNav = ({ imageUrl, eventName, date, location, price }) => (
