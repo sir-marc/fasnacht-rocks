@@ -23,7 +23,7 @@
   overflow-x: auto;
 
   @include respond-to('medium') {
-    justify-content: center;
+    text-align: center;
   }
 
   .date-entry {
