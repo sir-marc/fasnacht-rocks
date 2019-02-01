@@ -95,6 +95,7 @@
   }
 
   .shadow {
+    $shadow-oversize: 200px;
     position: absolute;
     right: 0;
     top: 0;
@@ -110,9 +111,9 @@
 
       position: fixed;
       right: 0;
-      top: -25px;
+      top: -$shadow-oversize / 2;
 
-      height: calc(100% + 50px);
+      height: calc(100% + #{$shadow-oversize});
       width: 200%;
       box-shadow: 0px 0 17px 10px inset rgba(255, 255, 255, 0.3);
 
