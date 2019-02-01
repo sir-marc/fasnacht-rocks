@@ -1,8 +1,8 @@
 import React from 'react';
 import './index.scss';
 
-const DateNav = ({ imageUrl, eventName, date, location, price, isNextOneUp }) => (
-  <div className={`event-card${isNextOneUp ? ' -next-one-up' : ''}`}>
+const DateNav = ({ imageUrl, eventName, date, location, price, isNextOneUp, _ref }) => (
+  <div className={`event-card${isNextOneUp ? ' -next-one-up' : ''}`} ref={_ref}>
     <img src={ imageUrl } alt="" className="visual"></img>
     <div className="card">
       <div className="row top-row">

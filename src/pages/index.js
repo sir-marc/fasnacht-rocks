@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import moment from 'moment'
 import { StaticQuery, graphql } from 'gatsby';
 import Header from 'components/header';
@@ -12,6 +12,7 @@ import './reset.scss'
 
 const IndexPage = () => {
   const [ filter, setFilter ] = useState({})
+  const nextOneUpElement = useRef(null)
 
   const filterFunctions = {
     date: event => parseDateFromCraftTimestamp(event.date).toString() === filter.date,
@@ -19,9 +20,8 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
-    const nextOneUp = document.querySelector('.event-card.-next-one-up')
-    if (nextOneUp) {
-      const y = nextOneUp.offsetTop
+    if (nextOneUpElement.current) {
+      const y = nextOneUpElement.current.offsetTop
       window.scrollTo(0, y - 250)
     }
   }, [filter])
@@ -78,6 +78,7 @@ const IndexPage = () => {
                       }
                       return (
                         <EventCard
+                          _ref={isNextOneUp ? nextOneUpElement : null}
                           key={eventEntry.id}
                           eventName={eventEntry.title}
                           isNextOneUp={isNextOneUp}
