@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './index.scss';
 
-const Header = ({ setFilter, filterValue }) => {
+const Header = ({ setFilter, filterValue, _ref }) => {
   const [searchValue, setSearchValue] = useState('')
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const Header = ({ setFilter, filterValue }) => {
   }
 
   return (
-    <div className="header">
+    <div className="header" ref={_ref} >
       <form className="search" onSubmit={onSubmit}>
         <input type="text" placeholder="Wo?" onChange={e => setSearchValue(e.target.value)} value={searchValue} />
         <button type="submit"></button>

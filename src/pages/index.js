@@ -12,6 +12,7 @@ import './reset.scss'
 
 const IndexPage = () => {
   const [ filter, setFilter ] = useState({})
+  const headerElement = useRef(null)
   const nextOneUpElement = useRef(null)
 
   const filterFunctions = {
@@ -21,8 +22,8 @@ const IndexPage = () => {
 
   useEffect(() => {
     if (nextOneUpElement.current) {
-      const y = nextOneUpElement.current.offsetTop
-      window.scrollTo(0, y - 250)
+      const y = nextOneUpElement.current.offsetTop - headerElement.current.offsetHeight - 50
+      window.scrollTo(0, y)
     }
   }, [filter])
 
@@ -33,7 +34,7 @@ const IndexPage = () => {
 
   return (
     <div id="root">
-      <Header setFilter={setFilter} filterValue={filter.location}/>
+      <Header setFilter={setFilter} filterValue={filter.location} _ref={headerElement}/>
       {
         filterIsSet()
         && <button className="reset-filter" onClick={() => setFilter({})}>Reset Filter</button>
