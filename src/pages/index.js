@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import moment from 'moment'
 import { StaticQuery, graphql } from 'gatsby';
 import Header from 'components/header';
 import DateNav from 'components/date-nav';
@@ -17,7 +18,13 @@ const IndexPage = () => {
     location: event => event.location.toLowerCase().indexOf(filter.location.toLowerCase()) >= 0
   }
 
-  const filterIsSet = () => console.log(Object.values(filter)) || !!Object.values(filter).some(filterValue => filterValue)
+  useEffect(() => {
+    const nextOneUp = document.querySelector('.event-card.-next-one-up')
+    const y = nextOneUp.offsetTop
+    window.scrollTo(0, y - 250)
+  }, [filter])
+
+  const filterIsSet = () => !!Object.values(filter).some(filterValue => filterValue)
 
   const eventMatchesFilter = event =>
     Object.keys(filter).every(key => filterFunctions[key](event))
@@ -53,20 +60,32 @@ const IndexPage = () => {
           }`}
           render={({ craft }) => {
             const eventEntries = craft.entries
+            let foundNextOneUp = false
             return (
               <>
                 <div className="events-container">
-                  {eventEntries.map(eventEntry =>
-                    eventMatchesFilter(eventEntry) && (
-                    <EventCard
-                      key={eventEntry.id}
-                      eventName={eventEntry.title}
-                      date={parseDateFromCraftTimestamp(eventEntry.date)}
-                      location={eventEntry.location}
-                      price={eventEntry.price[0] || {}}
-                      imageUrl={eventEntry.image[0] ? eventEntry.image[0].url : ''}
-                    />
-                  ))}
+                  {eventEntries.map(eventEntry => {
+                    if (eventMatchesFilter(eventEntry)) {
+                      const today = moment().subtract(1, 'days')
+                      const eventDate = parseDateFromCraftTimestamp(eventEntry.date)
+                      let isNextOneUp = false
+                      if (today.unix() < eventDate.unix() && !foundNextOneUp) {
+                        foundNextOneUp = true
+                        isNextOneUp = true
+                      }
+                      return (
+                        <EventCard
+                          key={eventEntry.id}
+                          eventName={eventEntry.title}
+                          isNextOneUp={isNextOneUp}
+                          date={eventDate}
+                          location={eventEntry.location}
+                          price={eventEntry.price[0] || {}}
+                          imageUrl={eventEntry.image[0] ? eventEntry.image[0].url : ''}
+                        />
+                      )
+                    }
+                  })}
                 </div>
                 <DateNav
                   setFilter={setFilter}
