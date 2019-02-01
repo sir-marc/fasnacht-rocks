@@ -1,3 +1,14 @@
+### DEV
+Start postgres database like defined in `./craft/.env` file.
+Start backend server on localhost with for example mamp
+Link localhost to https server with ngrok
+`./ngrok http 8888` <- port from mamp server
+Adjust api url in `.env` frontend-file (do not forget `/api`)
+
+### Deployment
+Adjust environment variables on netlify to the same value like the frontend `.env` file.
+Push to master branch
+
 **NOTE: These instructions are installing this barebones starter from scratch.**
 
 <img src="https://pbs.twimg.com/profile_images/890640990184329216/ds8IotBg_400x400.jpg" alt="Craft CMS Logo" width="200"/><img src="https://pbs.twimg.com/profile_images/875556871427375106/Xuq8DypK_400x400.jpg" alt="Gatsby Logo" width="200"/>
@@ -80,7 +91,7 @@ _This is a very basic template, just to display the data you have currently in y
 * Enter CraftQL settings and scroll to the bottom
 * Click generate a new token (you can name it Gatsby if you want)
 * See Curl under Getting Started and run the command given
-* It should return: 
+* It should return:
 ```
 {"data":{"helloWorld":"Welcome to GraphQL! You now have a fully functional GraphQL endpoint."}}
 ```
