@@ -17,12 +17,18 @@ const IndexPage = () => {
     location: event => event.location.toLowerCase().indexOf(filter.location.toLowerCase()) >= 0
   }
 
+  const filterIsSet = () => console.log(Object.values(filter)) || !!Object.values(filter).some(filterValue => filterValue)
+
   const eventMatchesFilter = event =>
     Object.keys(filter).every(key => filterFunctions[key](event))
 
   return (
     <div id="root">
       <Header setFilter={setFilter} filterValue={filter.location}/>
+      {
+        filterIsSet()
+        && <button className="reset-filter" onClick={() => setFilter({})}>Reset Filter</button>
+      }
       <div className="page-content">
         <StaticQuery
           query={graphql`{

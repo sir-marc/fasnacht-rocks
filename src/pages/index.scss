@@ -12,5 +12,21 @@ html {
 
       padding: 25px 0;
     }
+
+    .reset-filter {
+      background: radial-gradient(circle at top center, #0C3748 -15%, #06161E 100%);
+      color: #fff;
+
+      position: fixed;
+      right: 0;
+      top: 250px;
+
+      border: 0;
+      border-radius: 8px 0 0 8px;
+
+      padding: 10px;
+
+      font-size: 18px;
+    }
   }
 }
