@@ -1,0 +1,81 @@
+@import 'commons/css/variables.scss';
+
+.date-nav {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: $date-nav-height;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  color: $date-nav-text-color;
+  background: radial-gradient(circle at top center, #0C3748 -15%, #06161E 100%);
+
+  box-shadow: 0 -5px 30px 0 rgba(1,5,19,0.5);
+
+  overflow-x: auto;
+
+  .date-entry {
+    $date-entry-padding: 35px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    margin: 0 $date-entry-padding;
+
+    opacity: 0.45;
+
+    &:last-child {
+      padding-right: $date-entry-padding;
+    }
+
+    span {
+      display: block;
+      text-align: center;
+    }
+
+    .week-day,
+    .month {
+      font-size: 26px;
+      line-height: 32px;
+
+      color: #BFBFBF;
+    }
+
+    .day {
+      font-size: 40px;
+      line-height: 1.25;
+      font-weight: 500;
+    }
+
+    &.-active {
+      opacity: 1;
+      position: relative;
+
+      &:after {
+        display: block;
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate3d(-50%, 50%, 0);
+
+        height: 16px;
+        width: 16px;
+
+        border-radius: 50%;
+
+        background-color: #fff;
+        box-shadow: 0 0 50px 7px rgba(255,255,255,0.5);
+      }
+    }
+  }
+}

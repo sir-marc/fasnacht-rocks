@@ -1,0 +1,48 @@
+@import 'commons/css/variables.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  height: 200px;
+  width: 100%;
+
+  background: url('../../images/header.jpg');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .search {
+    height: 70px;
+    display: flex;
+
+    input, button {
+      height: 100%;
+    }
+
+    button {
+      width: 70px;
+
+      background: radial-gradient(circle, #093E7B 0%, #246EB9 100%);
+
+      border: 0;
+      border-radius: 0 16px 0 0;
+    }
+
+    input {
+      width: 330px;
+
+      border-radius: 0 0 0 16px;
+      border: 0;
+
+      padding: 0 20px;
+
+      font-size: inherit;
+    }
+  }
+}

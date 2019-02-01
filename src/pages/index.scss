@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+@import 'commons/css/variables.scss';
+
+html {
+  font-family: $font-family;
+  font-size: 36px;
+
+  #root {
+    .page-content {
+      margin-top: 200px;
+      margin-bottom: 170px;
+
+      padding: 50px 0;
+    }
+  }
+}
