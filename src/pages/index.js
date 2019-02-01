@@ -20,8 +20,10 @@ const IndexPage = () => {
 
   useEffect(() => {
     const nextOneUp = document.querySelector('.event-card.-next-one-up')
-    const y = nextOneUp.offsetTop
-    window.scrollTo(0, y - 250)
+    if (nextOneUp) {
+      const y = nextOneUp.offsetTop
+      window.scrollTo(0, y - 250)
+    }
   }, [filter])
 
   const filterIsSet = () => !!Object.values(filter).some(filterValue => filterValue)
