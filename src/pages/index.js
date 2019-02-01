@@ -37,7 +37,6 @@ const IndexPage = () => (
           return (
             <div className="events-container">
               {eventEntries.map(eventEntry => (
-                console.log(eventEntry) ||
                 <EventCard
                   key={eventEntry.id}
                   eventName={eventEntry.title}
