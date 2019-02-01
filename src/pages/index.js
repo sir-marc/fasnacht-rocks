@@ -43,8 +43,8 @@ const IndexPage = () => (
                   eventName={eventEntry.title}
                   date={eventEntry.date}
                   location={eventEntry.location}
-                  price={eventEntry.price[0]}
-                  imageUrl={eventEntry.image[0].url}
+                  price={eventEntry.price[0] || {}}
+                  imageUrl={eventEntry.image[0] ? eventEntry.image[0].url : ''}
                 />
               ))}
             </div>
