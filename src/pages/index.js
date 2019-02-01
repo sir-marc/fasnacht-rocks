@@ -14,7 +14,7 @@ const IndexPage = () => (
       <StaticQuery
         query={graphql`{
           craft {
-            entries(section:[events]) {
+            entries(section:[events], orderBy: "date") {
               ...on Craft_Events {
                 title,
                 location,
