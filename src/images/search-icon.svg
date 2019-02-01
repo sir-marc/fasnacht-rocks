@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="22.954630109478444" width="24.454630109478387">
+  <defs>
+    <path id="path-0" opacity="1" fill-rule="evenodd" d="M2.352315054739222,20.602315054739215 C2.352315054739222,20.602315054739215 3.514492399744875,19.480674978588894 6.630790272085301,16.47307497858889 C9.747088144425724,13.465474978588892 10.336357607930712,12.89675949918366 10.336357607930712,12.89675949918366 "/>
+    <ellipse id="ellipse-1" opacity="1" rx="6.723404255319149" ry="6.488888888888889" cx="15.378910799420037" cy="8.841203943628125"/>
+    <mask id="mask-2" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+      <rect opacity="1" x="0" y="0" width="24.454630109478387" height="22.954630109478444" fill="black"/>
+      <use xlink:href="#ellipse-1" fill="white"/>
+    </mask>
+  </defs>
+  <g opacity="1">
+    <g opacity="1">
+      <use xlink:href="#path-0" fill-opacity="0" stroke="rgb(255,254,254)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"/>
+    </g>
+    <g opacity="1">
+      <use xlink:href="#ellipse-1" fill-opacity="0" stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" mask="url(#mask-2)"/>
+    </g>
+  </g>
+</svg>
