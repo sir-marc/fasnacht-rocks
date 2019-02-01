@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Header from 'components/header';
 import DateNav from 'components/date-nav';
 import EventCard from 'components/event-card';
+import { parseDateFromCraftTimestamp } from 'helpers/date'
 
 import './index.scss';
 import './reset.scss'
@@ -48,7 +49,7 @@ const IndexPage = () => {
                   <EventCard
                     key={eventEntry.id}
                     eventName={eventEntry.title}
-                    date={eventEntry.date}
+                    date={parseDateFromCraftTimestamp(eventEntry.date)}
                     location={eventEntry.location}
                     price={eventEntry.price[0] || {}}
                     imageUrl={eventEntry.image[0] ? eventEntry.image[0].url : ''}
