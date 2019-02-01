@@ -22,7 +22,7 @@ const IndexPage = () => {
 
   return (
     <div id="root">
-      <Header setFilter={setFilter}/>
+      <Header setFilter={setFilter} filterValue={filter.location}/>
       <div className="page-content">
         <StaticQuery
           query={graphql`{

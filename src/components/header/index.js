@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.scss';
 
-const Header = ({ setFilter }) => {
+const Header = ({ setFilter, filterValue }) => {
   const [searchValue, setSearchValue] = useState('')
+
+  useEffect(() => {
+    setSearchValue(filterValue || '')
+  }, [ filterValue ])
 
   const onSubmit = e => {
     e.preventDefault();
@@ -12,7 +16,7 @@ const Header = ({ setFilter }) => {
   return (
     <div className="header">
       <form className="search" onSubmit={onSubmit}>
-        <input type="text" placeholder="Wo?" onChange={e => setSearchValue(e.target.value)}/>
+        <input type="text" placeholder="Wo?" onChange={e => setSearchValue(e.target.value)} value={searchValue} />
         <button type="submit"></button>
       </form>
     </div>
