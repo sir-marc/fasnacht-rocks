@@ -13,7 +13,7 @@ const DateNav = ({ imageUrl, eventName, date, location, price, isNextOneUp }) =>
         <span className="location">{location}</span>
         <div className="price-wrapper">
           <span className="prices">{price.prices}</span>
-          <span className="info-bubble">?</span>
+          { price.description && <span className="info-bubble">?</span> }
         </div>
       </div>
     </div>
