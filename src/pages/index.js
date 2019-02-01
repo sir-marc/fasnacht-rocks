@@ -44,6 +44,7 @@ const IndexPage = () => {
             craft {
               entries(section:[events], orderBy: "date") {
                 ...on Craft_Events {
+                  id,
                   title,
                   location,
                   date,
@@ -65,7 +66,7 @@ const IndexPage = () => {
             let foundNextOneUp = false
             return (
               <>
-                <div className="events-container">
+                <div className="events-container" key="events-container">
                   {eventEntries.map(eventEntry => {
                     if (eventMatchesFilter(eventEntry)) {
                       const today = moment().subtract(1, 'days')
@@ -87,9 +88,11 @@ const IndexPage = () => {
                         />
                       )
                     }
+                    return null
                   })}
                 </div>
                 <DateNav
+                  key="date-nav"
                   setFilter={setFilter}
                   dateFilter={filter.date}
                   dates={Array.from(new Set(eventEntries.map(({ date }) => date))).map(parseDateFromCraftTimestamp)}

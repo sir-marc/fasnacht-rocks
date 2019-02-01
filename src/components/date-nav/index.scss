@@ -38,6 +38,9 @@
     opacity: 0.45;
     cursor: pointer;
 
+    background: 0;
+    border: 0;
+
     &:last-child {
       padding-right: $date-entry-padding;
     }
@@ -45,14 +48,14 @@
     span {
       display: block;
       text-align: center;
+
+      color: #BFBFBF;
     }
 
     .week-day,
     .month {
       font-size: 13px;
       line-height: 16px;
-
-      color: #BFBFBF;
     }
 
     .day {
@@ -64,6 +67,10 @@
     &.-active {
       opacity: 1;
       position: relative;
+
+      &:focus {
+        outline: none;
+      }
 
       &:after {
         display: block;
