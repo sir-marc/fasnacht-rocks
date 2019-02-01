@@ -7,7 +7,7 @@ const DateNav = ({ imageUrl, eventName, date, location, price }) => (
     <div className="card">
       <div className="row top-row">
         <h2 className="event-name">{eventName}</h2>
-        <span className="date">{ date }</span>
+        <span className="date">{ date.format('DD.MM.YYYY') }</span>
       </div>
       <div className="row bottom-row">
         <span className="location">{location}</span>
