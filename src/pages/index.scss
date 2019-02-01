@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
 @import 'commons/css/variables.scss';
+@import 'commons/css/breakpoint.scss';
 
 html {
   font-family: $font-family;
@@ -11,6 +12,10 @@ html {
       margin-bottom: 85px;
 
       padding: 25px 0;
+
+      @include respond-to('medium') {
+        margin-top: $header-height-medium;
+      }
     }
 
     .reset-filter {

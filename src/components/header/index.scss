@@ -1,4 +1,5 @@
 @import 'commons/css/variables.scss';
+@import 'commons/css/breakpoint';
 
 .header {
   position: fixed;
@@ -47,5 +48,9 @@
 
       font-size: inherit;
     }
+  }
+
+  @include respond-to('medium') {
+    height: $header-height-medium;
   }
 }
