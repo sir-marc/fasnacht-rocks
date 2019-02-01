@@ -16,6 +16,7 @@ const DateNav = ({ dates, dateFilter, setFilter }) => (
         )
       })
     }
+    <div className="shadow"></div>
   </div>
 )
 
