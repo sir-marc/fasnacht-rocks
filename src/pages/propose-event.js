@@ -17,6 +17,7 @@ const ProposeEvent = () => {
             Ich und alle Benutzer dieser Webseite sind froh, über jeden eingereichten Vorschalg.
             Besten Dank im Namen Aller!
           </div>
+          <input type="hidden" name="proposals" value="contact" />
           <label className="input-group">
             <span>Wie heisst die Party?</span>
             <input className="input-field" type="text" name="event-name" />
