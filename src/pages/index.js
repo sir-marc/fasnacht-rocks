@@ -39,7 +39,7 @@ const IndexPage = () => {
     Object.keys(filter).every(key => filterFunctions[key](event))
 
   return (
-    <div id="root">
+    <div className="home-page">
       <Header _ref={headerElement}>
         <Search setFilter={setFilter} filterValue={filter.location} />
       </Header>
@@ -65,7 +65,8 @@ const IndexPage = () => {
                       prices,
                       description
                     }
-                  }
+                  },
+                  partyUrl
                 }
               }
             }
@@ -94,6 +95,7 @@ const IndexPage = () => {
                           location={eventEntry.location}
                           price={eventEntry.price[0] || {}}
                           imageUrl={eventEntry.image[0] ? process.env.GATSBY_BACKEND_URL + eventEntry.image[0].url : ''}
+                          partyUrl={eventEntry.partyUrl}
                         />
                       )
                     }

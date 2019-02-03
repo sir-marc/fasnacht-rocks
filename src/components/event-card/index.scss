@@ -25,16 +25,37 @@
     margin-bottom: 25px;
   }
 
-  .visual {
+  .visual-wrapper {
     width: $image-width;
     height: $image-height;
+    display: block;
+    position: relative;
 
     flex-shrink: 0;
 
     background: radial-gradient(circle, #093E7B 0%, #2E76A4 100%);
 
     transform: translateX($x-translation);
+
+    .visual {
+      width: $image-width;
+      height: $image-height;
+    }
+
+    .text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 5px;
+
+      font-size: 12px;
+      letter-spacing: 0.5px;
+
+      color: #fff;
+      background-color: rgba($dark-color, 0.6)
+    }
   }
+
 
   .card {
     width: $card-width;
