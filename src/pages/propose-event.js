@@ -5,19 +5,19 @@ import './propose-event.scss'
 
 const ProposeEvent = () => {
   return (
-    <div id="root">
+    <div className="propose-event">
       <Header>
         <h1>
           Fasnachtsparty vorschlagen
         </h1>
       </Header>
       <Content>
-        <form className="propose-event" name="proposals" method="POST" data-netlify="true" action="/thanks">
-          <div className="intro-text">
-            Ich und alle Benutzer dieser Webseite sind froh, über jeden eingereichten Vorschalg.
-            Besten Dank im Namen Aller!
-          </div>
-          <input type="hidden" name="proposals" value="contact" />
+        <div className="intro-text">
+          Ich und alle Benutzer dieser Webseite sind froh, über jeden eingereichten Vorschalg.
+          Besten Dank im Namen Aller!
+        </div>
+        <form name="proposals" method="post" data-netlify="true" action="/thanks">
+          <input type="hidden" name="form-name" value="proposals" />
           <label className="input-group">
             <span>Wie heisst die Party?</span>
             <input className="input-field" type="text" name="event-name" />
