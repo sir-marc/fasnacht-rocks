@@ -9,8 +9,6 @@ import EventCard from 'components/event-card';
 import { parseDateFromCraftTimestamp } from 'helpers/date'
 
 import './index.scss';
-import './reset.scss'
-
 
 const IndexPage = () => {
   const [ filter, setFilter ] = useState({})
