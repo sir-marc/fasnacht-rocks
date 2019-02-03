@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from 'components/layout/header'
 import Content from 'components/layout/content'
+import Button from 'components/button'
 import './propose-event.scss'
 
 const ProposeEvent = () => {
@@ -34,7 +35,7 @@ const ProposeEvent = () => {
             <span>Webseite der Party</span>
             <input className="input-field" type="text" name="event-website" />
           </label>
-          <button className="submit" type="submit">Vorschlag einreichen</button>
+          <Button type="submit">Vorschlag einreichen</Button>
         </form>
       </Content>
     </div>

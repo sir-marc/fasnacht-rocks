@@ -30,19 +30,11 @@
     }
   }
 
-  .submit {
+  .button {
     position: absolute;
     bottom: 0;
     left: 0;
 
     width: 100%;
-    padding: 20px;
-
-    font-size: 18px;
-
-    background: $dark-gradient;
-    color: $white-text-color;
-
-    border: 0;
   }
 }

@@ -1,0 +1,16 @@
+@import 'commons/css/style.scss';
+
+.button {
+  display: block;
+
+  padding: 20px;
+
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+
+  background: $dark-gradient;
+  color: $white-text-color;
+
+  border: 0;
+}

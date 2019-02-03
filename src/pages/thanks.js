@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from 'components/layout/header'
 import Content from 'components/layout/content'
+import LinkButton from 'components/button/link-button'
 
 import './thanks.scss'
 
@@ -10,7 +11,7 @@ const Thanks = () => (
       <h1>Vielen Dank!</h1>
     </Header>
     <Content>
-      <a className="back-to-overview" href="/">Zurück zur Übersicht</a>
+      <LinkButton className="button back-to-overview" href="/">Zurück zur Übersicht</LinkButton>
     </Content>
   </div>
 )
