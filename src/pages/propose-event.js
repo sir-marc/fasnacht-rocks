@@ -12,7 +12,7 @@ const ProposeEvent = () => {
         </h1>
       </Header>
       <Content>
-        <form className="propose-event" action="/" name="contact" method="POST" data-netlify="true">
+        <form className="propose-event" name="proposals" method="POST" data-netlify="true">
           <div className="intro-text">
             Ich und alle Benutzer dieser Webseite sind froh, über jeden eingereichten Vorschalg.
             Besten Dank im Namen Aller!
