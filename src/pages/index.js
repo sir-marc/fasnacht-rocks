@@ -43,10 +43,13 @@ const IndexPage = () => {
       <Header _ref={headerElement}>
         <Search setFilter={setFilter} filterValue={filter.location} />
       </Header>
-      {
-        filterIsSet()
-        && <button className="reset-filter" onClick={() => setFilter({})}>Reset Filter</button>
-      }
+      <button
+        className={`reset-filter${filterIsSet() ? ' -show' : ''}`}
+        onClick={() => setFilter({})}
+        hidden={!filterIsSet()}
+      >
+        Reset Filter
+      </button>
       <Content>
         <StaticQuery
           query={graphql`{

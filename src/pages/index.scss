@@ -17,6 +17,13 @@
     padding: 10px;
 
     font-size: 18px;
+
+    transform: translateX(105%);
+    transition: transform .3s;
+
+    &.-show {
+      transform: translateX(0);
+    }
   }
 
   .propose-event-teaser {
