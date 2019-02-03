@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
 import moment from 'moment'
 import { StaticQuery, graphql } from 'gatsby';
-import Header from 'components/header';
+import Header from 'components/layout/header'
+import Content from 'components/layout/content'
+import Search from 'components/search'
 import DateNav from 'components/date-nav';
 import EventCard from 'components/event-card';
 import { parseDateFromCraftTimestamp } from 'helpers/date'
@@ -40,12 +42,14 @@ const IndexPage = () => {
 
   return (
     <div id="root">
-      <Header setFilter={setFilter} filterValue={filter.location} _ref={headerElement}/>
+      <Header _ref={headerElement}>
+        <Search setFilter={setFilter} filterValue={filter.location} />
+      </Header>
       {
         filterIsSet()
         && <button className="reset-filter" onClick={() => setFilter({})}>Reset Filter</button>
       }
-      <div className="page-content">
+      <Content>
         <StaticQuery
           query={graphql`{
             craft {
@@ -98,6 +102,10 @@ const IndexPage = () => {
                     return null
                   })}
                 </div>
+                <a href="/propose-event" className="propose-event-teaser">
+                  Deine Fasnacht fehlt? <br/>
+                  Informier mich <span className="underlined">hier</span>!
+                </a>
                 <DateNav
                   key="date-nav"
                   setFilter={setFilter}
@@ -108,7 +116,7 @@ const IndexPage = () => {
               );
             }}
         />
-      </div>
+      </Content>
     </div>
   );
 }

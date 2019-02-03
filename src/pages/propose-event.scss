@@ -1,0 +1,48 @@
+@import 'commons/css/variables.scss';
+
+.propose-event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  max-width: 500px;
+
+  .intro-text {
+    margin-bottom: 40px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    span {
+      display: block;
+    }
+    .input-field {
+      display: block;
+      border: 1px solid $light-text-color;
+      margin: 5px 0 25px 0px;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+
+  .submit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 20px;
+
+    font-size: 18px;
+
+    background: $dark-gradient;
+    color: $white-text-color;
+
+    border: 0;
+  }
+}

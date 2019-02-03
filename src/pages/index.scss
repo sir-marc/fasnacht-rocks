@@ -7,16 +7,6 @@ html {
   font-size: 18px;
 
   #root {
-    .page-content {
-      margin-top: $header-height;
-      margin-bottom: 85px;
-
-      padding: 25px 0;
-
-      @include respond-to('medium') {
-        margin-top: $header-height-medium;
-      }
-    }
 
     .reset-filter {
       background: radial-gradient(circle at top center, #0C3748 -15%, #06161E 100%);
@@ -34,6 +24,23 @@ html {
       padding: 10px;
 
       font-size: 18px;
+    }
+
+    .propose-event-teaser {
+      display: block;
+      width: calc(100% - 40px);
+      margin: 40px 20px 0;
+      padding: 20px 10px;
+
+      background: $dark-gradient;
+      color: $light-text-color;
+
+      text-decoration: none;
+      text-align: center;
+
+      .underlined {
+        text-decoration: underline;
+      }
     }
   }
 }

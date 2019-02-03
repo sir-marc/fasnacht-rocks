@@ -1,0 +1,14 @@
+@import 'commons/css/variables.scss',
+  'commons/css/breakpoint.scss';
+
+
+.page-content {
+  margin-top: $header-height;
+  margin-bottom: 85px;
+
+  padding: 25px 0;
+
+  @include respond-to('medium') {
+    margin-top: $header-height-medium;
+  }
+}
