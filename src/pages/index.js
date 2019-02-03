@@ -27,6 +27,12 @@ const IndexPage = () => {
     }
   }, [filter])
 
+  useEffect(() => {
+    if (nextOneUpElement.current) {
+      nextOneUpElement.current.classList.add('-next-one-up')
+    }
+  }, [])
+
   const filterIsSet = () => !!Object.values(filter).some(filterValue => filterValue)
 
   const eventMatchesFilter = event =>
@@ -82,7 +88,6 @@ const IndexPage = () => {
                           _ref={isNextOneUp ? nextOneUpElement : null}
                           key={eventEntry.id}
                           eventName={eventEntry.title}
-                          isNextOneUp={isNextOneUp}
                           date={eventDate}
                           location={eventEntry.location}
                           price={eventEntry.price[0] || {}}
