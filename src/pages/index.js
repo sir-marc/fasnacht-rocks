@@ -24,14 +24,9 @@ const IndexPage = () => {
     if (nextOneUpElement.current) {
       const y = nextOneUpElement.current.offsetTop - headerElement.current.offsetHeight - 50
       window.scrollTo(0, y)
-    }
-  }, [filter])
-
-  useEffect(() => {
-    if (nextOneUpElement.current) {
       nextOneUpElement.current.classList.add('-next-one-up')
     }
-  }, [])
+  }, [filter])
 
   const filterIsSet = () => !!Object.values(filter).some(filterValue => filterValue)
 
