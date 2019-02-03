@@ -1,18 +1,17 @@
 @import 'commons/css/variables.scss';
 
 .event-card {
-  $image-width: 130px;
-  $image-height: 120px;
+  $image-size: 130px;
 
   $card-width: 250px;
-  $card-height: 110px;
+  $card-height: $image-size - 10px;
 
   $x-translation: 20px;
 
   display: flex;
   justify-content: center;
 
-  height: $image-height;
+  height: $image-size;
 
   opacity: 0.45;
 
@@ -26,8 +25,8 @@
   }
 
   .visual-wrapper {
-    width: $image-width;
-    height: $image-height;
+    width: $image-size;
+    height: $image-size;
     display: block;
     position: relative;
 
@@ -38,8 +37,8 @@
     transform: translateX($x-translation);
 
     .visual {
-      width: $image-width;
-      height: $image-height;
+      width: $image-size;
+      height: $image-size;
     }
 
     .text {
@@ -59,7 +58,7 @@
 
   .card {
     width: $card-width;
-    height: 90%;
+    height: $card-height;
 
     margin-top: 5px;
     padding: 10px;
