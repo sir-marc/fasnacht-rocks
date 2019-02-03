@@ -23,15 +23,15 @@ const ProposeEvent = () => {
           </label>
           <label className="input-group">
             <span>Wo findet die Party statt?</span>
-            <input className="input-field" type="text" name="event-name" />
+            <input className="input-field" type="text" name="event-location" />
           </label>
           <label className="input-group">
             <span>Wann findet die Party statt?</span>
-            <input className="input-field" type="text" name="event-name" />
+            <input className="input-field" type="text" name="event-date" />
           </label>
           <label className="input-group">
             <span>Webseite der Party</span>
-            <input className="input-field" type="text" name="event-name" />
+            <input className="input-field" type="text" name="event-website" />
           </label>
           <button className="submit" type="submit">Vorschlag einreichen</button>
         </form>
