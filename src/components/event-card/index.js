@@ -4,7 +4,7 @@ import './index.scss';
 
 const DateNav = ({ imageUrl, eventName, date, location, price, partyUrl, _ref }) => (
   <div className="event-card" ref={_ref}>
-    <a className="visual-wrapper" href={partyUrl} target="_blank" rel="noopener">
+    <a className="visual-wrapper" href={partyUrl} target="_blank" rel="noopener noreferrer">
       <img src={ imageUrl } alt="" className="visual" />
       <span className="text">Zur Webseite</span>
     </a>
