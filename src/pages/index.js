@@ -46,7 +46,7 @@ const IndexPage = () => {
       <button
         className={`reset-filter${filterIsSet() ? ' -show' : ''}`}
         onClick={() => setFilter({})}
-        hidden={!filterIsSet()}
+        tabIndex={filterIsSet() ? 0 : -1}
       >
         Reset Filter
       </button>
