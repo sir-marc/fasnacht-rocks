@@ -56,7 +56,7 @@ const IndexPage = () => {
                   location,
                   date,
                   image {
-                    url
+                    filename
                   },
                   price {
                     ...on Craft_PricePrice {
@@ -92,7 +92,7 @@ const IndexPage = () => {
                           date={eventDate}
                           location={eventEntry.location}
                           price={eventEntry.price[0] || {}}
-                          imageUrl={eventEntry.image[0] ? process.env.GATSBY_BACKEND_URL + eventEntry.image[0].url : ''}
+                          imageFilename={eventEntry.image[0] ? eventEntry.image[0].filename : ''}
                           partyUrl={eventEntry.partyUrl}
                         />
                       )
