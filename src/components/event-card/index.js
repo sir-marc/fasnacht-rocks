@@ -42,22 +42,19 @@ const Image = ({ imageFilename }) => (
       }
     }`}
     render={({ allFile }) => {
-      console.log(allFile)
       const fixed = allFile.edges
         .map(edge => edge.node.childImageSharp)
         .filter(Boolean)
         .map(childImageSharp => childImageSharp.fixed)
         .map(fixed => {
           fixed.filename = fixed.src.substring(fixed.src.lastIndexOf("/") + 1);
-          console.log(fixed.filename, imageFilename)
           return fixed
         })
         .find(({ filename }) => filename === imageFilename)
-      console.log(fixed)
       if (fixed) {
         return <Img fixed={fixed} />
       }
-      return null
+      return <span></span>
       }}
   />
 )
