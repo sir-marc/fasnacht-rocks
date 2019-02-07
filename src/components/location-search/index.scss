@@ -21,6 +21,7 @@
 
   .autocomplete-dropdown-container {
     position: absolute;
+    z-index: 1;
     bottom: -5px;
     left: 0;
     transform: translateY(100%);
