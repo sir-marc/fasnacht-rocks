@@ -8,7 +8,7 @@ const DateNav = ({ dates, dateFilter, setFilter }) => (
         const dateString = date.toString()
         const className = `date-entry${dateString === dateFilter ? ' -active' : ''}`
         return (
-          <button className={className} key={dateString} onClick={() => setFilter({ date: dateString })}>
+          <button className={className} key={dateString} onClick={() => setFilter(dateString)}>
             <span className="week-day">{date.format('dd')}.</span>
             <span className="day">{date.format('DD')}</span>
             <span className="month">{date.format('MMM')}.</span>
