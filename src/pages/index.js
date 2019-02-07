@@ -50,7 +50,14 @@ const IndexPage = () => {
       <Header _ref={headerElement}>
         <LocationSearch setFilter={setLocationFilter} />
         <div className="slider">
-          <InputRange type="range" minValue={1} maxValue={20} value={distanceFilter} onChange={setDistanceFilter}/>
+          <InputRange
+            type="range"
+            minValue={1}
+            maxValue={20}
+            value={distanceFilter}
+            onChange={setDistanceFilter}
+            formatLabel={value => `${value}km`}
+          />
         </div>
       </Header>
       <button
