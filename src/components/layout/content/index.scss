@@ -6,6 +6,7 @@
   margin: $header-height auto $date-nav-height;
   padding: 25px 0;
   max-width: 900px;
+  width: calc(100% - 20px);
 
   @include respond-to('medium') {
     margin-top: $header-height-medium;

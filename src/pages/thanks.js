@@ -3,8 +3,6 @@ import Header from 'components/layout/header'
 import Content from 'components/layout/content'
 import LinkButton from 'components/button/link-button'
 
-import './thanks.scss'
-
 const Thanks = () => (
   <div className="thanks-page">
     <Header>
