@@ -3,10 +3,9 @@
 
 
 .page-content {
-  margin-top: $header-height;
-  margin-bottom: 85px;
-
+  margin: $header-height auto $date-nav-height;
   padding: 25px 0;
+  max-width: 900px;
 
   @include respond-to('medium') {
     margin-top: $header-height-medium;

@@ -69,13 +69,13 @@ const IndexPage = ({ data }) => {
           Deine Fasnacht fehlt? <br />
           Informier mich <span className="underlined">hier</span>!
         </a>
-        <DateNav
-          key="date-nav"
-          setFilter={setDateFilter}
-          dateFilter={dateFilter}
-          dates={dates}
-        />
       </Content>
+      <DateNav
+        key="date-nav"
+        setFilter={setDateFilter}
+        dateFilter={dateFilter}
+        dates={dates}
+      />
     </div>
   )
 }
