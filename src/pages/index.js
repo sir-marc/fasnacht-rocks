@@ -2,13 +2,12 @@ import React, { useState, useEffect, useRef } from 'react'
 import { graphql } from 'gatsby'
 import Header from 'components/layout/header'
 import Content from 'components/layout/content'
-import LocationSearch from 'components/location-search'
+import LocationSearch from 'components/events/location-search'
 import DateNav from 'components/date-nav'
 import EventList from 'components/events/event-lists'
 import { parseDateFromCraftTimestamp } from 'helpers/date'
 import { dedupe } from 'helpers/array'
 
-import InputRange from 'react-input-range'
 import 'react-input-range/src/scss/index.scss'
 
 import './index.scss'
@@ -43,17 +42,11 @@ const IndexPage = ({ data }) => {
   return (
     <div className="home-page">
       <Header _ref={headerElement}>
-        <LocationSearch setFilter={setLocationFilter} />
-        <div className="slider">
-          <InputRange
-            type="range"
-            minValue={1}
-            maxValue={20}
-            value={distanceFilter}
-            onChange={setDistanceFilter}
-            formatLabel={value => `${value}km`}
-          />
-        </div>
+        <LocationSearch
+          setLocationFilter={setLocationFilter}
+          distanceValue={distanceFilter}
+          setDistanceFilter={setDistanceFilter}
+        />
       </Header>
       <button
         className={`reset-filter${filterIsSet() ? ' -show' : ''}`}

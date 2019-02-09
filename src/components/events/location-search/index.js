@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete';
+import InputRange from 'react-input-range'
 import './index.scss';
 
-const LocationSearch = ({ setFilter }) => {
+const LocationSearch = ({ setLocationFilter, distanceValue, setDistanceFilter }) => {
   const [address, setAddress] = useState('')
 
   const handleSelect = address => {
@@ -11,11 +12,11 @@ const LocationSearch = ({ setFilter }) => {
         setAddress(results[0].address_components[0].short_name)
         return getLatLng(results[0])
       })
-      .then(setFilter)
+      .then(setLocationFilter)
   }
 
   return (
-    <form className="location-search">
+    <div className="location-search">
       <PlacesAutocomplete
         value={address}
         onChange={setAddress}
@@ -64,7 +65,17 @@ const LocationSearch = ({ setFilter }) => {
           </div>
         )}
       </PlacesAutocomplete>
-    </form>
+      <div className="slider">
+        <InputRange
+          type="range"
+          minValue={1}
+          maxValue={20}
+          value={distanceValue}
+          onChange={setDistanceFilter}
+          formatLabel={value => `${value}km`}
+        />
+      </div>
+    </div>
   )
 }
 
