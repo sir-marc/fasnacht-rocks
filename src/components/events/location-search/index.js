@@ -33,7 +33,7 @@ const LocationSearch = ({ setLocationFilter, distanceValue, setDistanceFilter })
           <div className="input-container">
             <input
               {...getInputProps({
-                placeholder: 'Search Places ...',
+                placeholder: 'In welcher Region?',
                 className: 'location-search-input',
               })}
             />
