@@ -4,7 +4,7 @@ import Header from 'components/layout/header'
 import Content from 'components/layout/content'
 import LocationSearch from 'components/events/location-search'
 import DateNav from 'components/date-nav'
-import EventList from 'components/events/event-lists'
+import EventList from 'components/events/event-list'
 import { parseDateFromCraftTimestamp } from 'helpers/date'
 import { dedupe } from 'helpers/array'
 
