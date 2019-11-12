@@ -1,4 +1,5 @@
 //import fueuerball from './assets/images/parties/fueuerball.png'
+import fallback from "./assets/images/parties/fallback.png";
 import stiefelinacht from "./assets/images/parties/stiefelinacht.png";
 import naebelgeisternacht from "./assets/images/parties/naebelgeisternacht.png";
 import gaengeliball from "./assets/images/parties/gaengeliball.png";
@@ -23,7 +24,7 @@ export default [
       lng: 8.419706
     },
     date: "25.01.2020",
-    image: "",
+    image: fallback,
     price: "5.- / 10.-",
     priceDescription: "",
     partyUrl: "https://www.fuurball.ch"
@@ -195,7 +196,7 @@ export default [
     price: "10.- / 20.-",
     priceDescription: "Maskiert / Unmaskiert",
     partyUrl: "http://fasnachturdorf.ch"
-  }
+  },
   /* {
     id: "14",
     title: "Hinterbächliball",
@@ -210,5 +211,33 @@ export default [
     priceDescription: "",
     partyUrl:
       "https://www.rohrdorferfasnacht.ch/programm/hinterbaechliball.html"
-  } */
+  }, */
+  {
+    id: "15",
+    title: "Drachenacht",
+    location: {
+      name: "Villmergen",
+      lat: 47.348069,
+      lng: 8.243969
+    },
+    date: "01.02.2020",
+    image: fallback,
+    price: "",
+    priceDescription: "",
+    partyUrl: "https://www.tinitus5612.ch/drachenacht-2020/"
+  },
+  {
+    id: "16",
+    title: "Nordfäger",
+    location: {
+      name: "Wohlen",
+      lat: 47.3519831,
+      lng: 8.2792296
+    },
+    date: "01.02.2020",
+    image: fallback,
+    price: "",
+    priceDescription: "",
+    partyUrl: "http://www.nordfaeger.ch/Nordfaegerparty/"
+  }
 ];
