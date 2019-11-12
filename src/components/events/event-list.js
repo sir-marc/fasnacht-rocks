@@ -45,8 +45,9 @@ const EventList = ({ eventEntries, filter, scrollOffset }) => {
               key={eventEntry.id}
               eventName={eventEntry.title}
               date={eventDate}
-              location={eventEntry.location.place}
-              price={eventEntry.price[0] || {}}
+              location={eventEntry.location}
+              price={eventEntry.price}
+              priceDescription={eventEntry.priceDescription}
               image={eventEntry.image}
               partyUrl={eventEntry.partyUrl}
             />

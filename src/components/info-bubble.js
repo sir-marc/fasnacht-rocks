@@ -31,8 +31,8 @@ const HelpText = styled.div`
 
   transform: translateY(-100%);
 
-  background: $dark-gradient;
-  color: $light-text-color;
+  background: ${({ theme }) => theme.darkGradient};
+  color: ${({ theme }) => theme.lightTextColor};
 
   padding: 5px;
 
@@ -44,7 +44,7 @@ const HelpText = styled.div`
     width: 0;
     height: 0;
     border: ${arrowSize} solid transparent;
-    border-top-color: $dark-color;
+    border-top-color: ${({ theme }) => theme.darkColor};
     position: absolute;
     right: 5px;
     bottom: 0;

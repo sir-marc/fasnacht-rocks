@@ -108,6 +108,7 @@ const EventCard = ({
   date,
   location,
   price,
+  priceDescription,
   partyUrl,
   _ref
 }) => (
@@ -122,10 +123,10 @@ const EventCard = ({
         <PartyDate>{formatDate(date)}</PartyDate>
       </Row>
       <Row>
-        <Location>{location}</Location>
+        <Location>{location.name}</Location>
         <div className="price-wrapper">
-          <Prices>{price.prices}</Prices>
-          {price.description && <InfoBubble helptext={price.description} />}
+          <Prices>{price}</Prices>
+          {priceDescription && <InfoBubble helptext={priceDescription} />}
         </div>
       </Row>
     </Card>
