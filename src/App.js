@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
-import "./App.css";
+import "./App.scss";
 import theme from "./theme";
 import DateNav from "./components/date-nav";
 import Header from "./components/header";
@@ -11,6 +11,7 @@ import EventList from "./components/events/event-list";
 import rawEvents from "./events";
 import { dedupe } from "./helpers/array";
 import { parseDate } from "./helpers/date";
+import ProposeEventTeaser from "./components/propose-event/teaser";
 
 const events = rawEvents.sort((a, b) => {
   const aDate = parseDate(a.date).getTime();
@@ -70,6 +71,7 @@ function App() {
             }}
             scrollOffset={scrollOffset}
           />
+          <ProposeEventTeaser />
         </Content>
         <DateNav
           dates={dates}

@@ -5,7 +5,6 @@ export default styled.main`
   padding: 25px 0;
   max-width: 900px;
   width: calc(100% - 20px);
-
   @include respond-to("medium") {
     margin-top: ${({ theme }) => theme.headerHeightMedium};
   }
