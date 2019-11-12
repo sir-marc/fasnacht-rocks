@@ -113,7 +113,7 @@ const EventCard = ({
 }) => (
   <Container ref={_ref}>
     <PartyLink target="_blank" href={partyUrl} rel="noopener noreferrer">
-      <img src={image} />
+      <img src={image} role="presentation" alt="" />
       <span>Zur Webseite</span>
     </PartyLink>
     <Card>
