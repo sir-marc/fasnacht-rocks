@@ -26,12 +26,13 @@ function App() {
   const [scrollOffset, setScrollOffset] = useState(0);
 
   const headerElement = useRef(null);
+  const headerElementSet = !!headerElement.current;
 
   useEffect(() => {
     if (headerElement.current) {
       setScrollOffset(headerElement.current.offsetHeight + 50);
     }
-  }, [!!headerElement.current]);
+  }, [headerElementSet]);
 
   const resetFilters = () => {
     setDateFilter(undefined);
