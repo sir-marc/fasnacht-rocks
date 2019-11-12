@@ -26,14 +26,12 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <form
-      name="proposals"
-      method="post"
-      data-netlify="true"
-      onSubmit="{submitForm}"
-      style="display: none;"
-    >
+    <form name="proposals" netlify netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="proposals" />
+      <input type="text" name="event-name" />
+      <input type="text" name="event-location" />
+      <input type="text" name="event-date" />
+      <input type="text" name="event-website" />
     </form>
     <!--
       This HTML file is a template.
