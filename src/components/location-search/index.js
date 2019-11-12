@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng
@@ -23,11 +23,18 @@ const LocationSearch = ({
       .then(setLocationFilter);
   };
 
+  useEffect(() => {
+    console.log("use effect called");
+    if (!mapsLoaded) {
+      const script = document.createElement("script");
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_MAP_API_KEY}&libraries=places`;
+      window.document.body.appendChild(script);
+      script.addEventListener("load", () => setMapsLoaded(true));
+    }
+  }, [mapsLoaded]);
+
   if (!mapsLoaded) {
-    const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_MAP_API_KEY}&libraries=places`;
-    window.document.body.appendChild(script);
-    script.addEventListener("load", () => setMapsLoaded(true));
+    // wait until google maps is loaded
     return "";
   }
 
