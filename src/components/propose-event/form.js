@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import Button from "../button";
@@ -29,23 +29,6 @@ const Inputfield = styled.input`
 `;
 
 function Form() {
-  const [formSubmitted, setFormSubmitted] = useState();
-  const submitForm = e => {
-    setFormSubmitted(true);
-  };
-  const resetForm = e => {
-    setFormSubmitted(false);
-  };
-
-  if (formSubmitted) {
-    return (
-      <>
-        <IntroText>Vielen Dank!</IntroText>
-        <Button onClick={resetForm}>Neues Event vorschlagen</Button>
-      </>
-    );
-  }
-
   return (
     <>
       <IntroText>
