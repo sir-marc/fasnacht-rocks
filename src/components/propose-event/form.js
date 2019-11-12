@@ -52,12 +52,7 @@ function Form() {
         Ich und alle Benutzer dieser Webseite sind froh, über jeden
         eingereichten Vorschalg. Besten Dank im Namen Aller!
       </IntroText>
-      <form
-        name="proposals"
-        method="post"
-        data-netlify="true"
-        onSubmit={submitForm}
-      >
+      <form name="proposals" method="post" data-netlify="true">
         <input type="hidden" name="form-name" value="proposals" />
         <InputGroup>
           <span>Wie heisst die Party?</span>
