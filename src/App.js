@@ -8,7 +8,7 @@ import Content from "./components/content";
 import ResetButton from "./components/reset-button";
 import LocationSearch from "./components/location-search";
 import EventList from "./components/events/event-list";
-import rawEvents from "./events.json";
+import rawEvents from "./events";
 import { dedupe } from "./helpers/array";
 import { parseDate } from "./helpers/date";
 
