@@ -24,7 +24,6 @@ const LocationSearch = ({
   };
 
   useEffect(() => {
-    console.log("use effect called");
     if (!mapsLoaded) {
       const script = document.createElement("script");
       script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_MAP_API_KEY}&libraries=places`;
