@@ -239,5 +239,19 @@ export default [
     price: "",
     priceDescription: "",
     partyUrl: "http://www.nordfaeger.ch/Nordfaegerparty/"
+  },
+  {
+    id: "17",
+    title: "Wörger",
+    location: {
+      name: "Sins",
+      lat: 47.191799,
+      lng: 8.39531
+    },
+    date: "07.02.2020",
+    image: fallback,
+    price: "",
+    priceDescription: "",
+    partyUrl: "https://www.woerger.ch/"
   }
 ];
