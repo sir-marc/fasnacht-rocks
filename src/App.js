@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
-import logo from "./logo.svg";
 import "./App.css";
 import theme from "./theme";
 import DateNav from "./components/date-nav";
