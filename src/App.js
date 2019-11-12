@@ -46,7 +46,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Header>
+        <Header ref={headerElement}>
           <LocationSearch
             setLocationFilter={setLocationFilter}
             distanceValue={distanceFilter}
