@@ -7,7 +7,7 @@ import { getDistance } from "../../helpers/geo";
 const EventList = ({ eventEntries, filter, scrollOffset }) => {
   const filterFunctions = [
     event =>
-      !!filter.date ? parseDate(event.date).toString() === filter.date : true,
+      !!filter.date ? parseDate(event.date).valueOf() === filter.date : true,
     ({ location }) =>
       !!filter.location
         ? getDistance(location, filter.location) < filter.distance
