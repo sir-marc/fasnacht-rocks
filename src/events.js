@@ -43,7 +43,7 @@ export default [
     priceDescription: "",
     partyUrl: "https://stiefeliryter.ch/index.php/stiefelinacht"
   },
-  /* {
+  {
     id: "3",
     title: "Näbelgeisternacht",
     location: {
@@ -51,12 +51,12 @@ export default [
       lat: 47.295974,
       lng: 8.395064
     },
-    date: "01.01.1999",
+    date: "01.02.2020",
     image: naebelgeisternacht,
     price: "15.-",
     priceDescription: "",
     partyUrl: "https://www.naebelgeischter.ch/näbelgeischter-nacht/"
-  }, */
+  },
   {
     id: "4",
     title: "Gängeliball",
@@ -197,7 +197,7 @@ export default [
     priceDescription: "Maskiert / Unmaskiert",
     partyUrl: "http://fasnachturdorf.ch"
   },
-  /* {
+  {
     id: "14",
     title: "Hinterbächliball",
     location: {
@@ -205,13 +205,13 @@ export default [
       lat: 47.421817,
       lng: 8.316452
     },
-    date: "01.01.1999",
+    date: "22.02.2020",
     image: hinterbaechliball,
     price: "",
     priceDescription: "",
     partyUrl:
       "https://www.rohrdorferfasnacht.ch/programm/hinterbaechliball.html"
-  }, */
+  },
   {
     id: "15",
     title: "Drachenacht",
