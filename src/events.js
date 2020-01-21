@@ -37,7 +37,7 @@ export default [
       lat: 47.275661,
       lng: 8.337783
     },
-    date: "26.01.2020",
+    date: "25.01.2020",
     image: stiefelinacht,
     price: "15.-",
     priceDescription: "",
