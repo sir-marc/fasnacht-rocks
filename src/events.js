@@ -2,17 +2,17 @@
 import fallback from "./assets/images/parties/fallback.png";
 import stiefelinacht from "./assets/images/parties/stiefelinacht.png";
 import naebelgeisternacht from "./assets/images/parties/naebelgeisternacht.png";
-import gaengeliball from "./assets/images/parties/gaengeliball.png";
+// import gaengeliball from "./assets/images/parties/gaengeliball.png";
 import vollgashoeckler from "./assets/images/parties/vollgashoeckler.png";
-import schraenzerball from "./assets/images/parties/schraenzerball.png";
+// import schraenzerball from "./assets/images/parties/schraenzerball.png";
 import geisterball from "./assets/images/parties/geisterball.png";
 import heuroepfel from "./assets/images/parties/heuroepfel.png";
 import fantasienball from "./assets/images/parties/fantasienball.png";
-import jokerball from "./assets/images/parties/jokerball.png";
+// import jokerball from "./assets/images/parties/jokerball.png";
 import schueuerball from "./assets/images/parties/schueuerball.png";
 import maskenball from "./assets/images/parties/maskenball.png";
 import urdorferfasnacht from "./assets/images/parties/urdorferfasnacht.png";
-import hinterbaechliball from "./assets/images/parties/hinterbaechliball.jpg";
+// import hinterbaechliball from "./assets/images/parties/hinterbaechliball.jpg";
 
 export default [
   {
