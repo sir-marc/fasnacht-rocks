@@ -8,7 +8,7 @@ import vollgashoeckler from "./assets/images/parties/vollgashoeckler.png";
 import geisterball from "./assets/images/parties/geisterball.png";
 import heuroepfel from "./assets/images/parties/heuroepfel.png";
 import fantasienball from "./assets/images/parties/fantasienball.png";
-// import jokerball from "./assets/images/parties/jokerball.png";
+import jokerball from "./assets/images/parties/jokerball.png";
 import schueuerball from "./assets/images/parties/schueuerball.png";
 import maskenball from "./assets/images/parties/maskenball.png";
 import urdorferfasnacht from "./assets/images/parties/urdorferfasnacht.png";
@@ -141,7 +141,7 @@ export default [
     priceDescription: "",
     partyUrl: "https://fantasienball.ch",
   },
-  /*   {
+  {
     id: "10",
     title: "Jokerball",
     location: {
@@ -149,12 +149,12 @@ export default [
       lat: 47.260704,
       lng: 8.373278,
     },
-    date: "21.02.2020",
+    date: "25.02.2022",
     image: jokerball,
     price: "5.- / 25.- / 15.-",
     priceDescription: "",
     partyUrl: "https://www.mery.ch/joker",
-  }, */
+  },
   {
     id: "11",
     title: "Schüürball",
