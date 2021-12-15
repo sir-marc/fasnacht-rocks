@@ -1,3 +1,9 @@
+### Deploy
+
+Push into `release` branch. And watch build/deploy on [Netflify](https://app.netlify.com/teams/sir-marc/builds/).
+
+# Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
