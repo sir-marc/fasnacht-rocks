@@ -21,13 +21,13 @@ export default [
     location: {
       name: "Obfelden",
       lat: 47.26177,
-      lng: 8.419706
+      lng: 8.419706,
     },
-    date: "25.01.2020",
+    date: "15.01.2022",
     image: fallback,
     price: "5.- / 10.-",
     priceDescription: "",
-    partyUrl: "https://www.fuurball.ch"
+    partyUrl: "https://www.fuurball.ch",
   },
   {
     id: "2",
@@ -35,13 +35,13 @@ export default [
     location: {
       name: "Muri",
       lat: 47.275661,
-      lng: 8.337783
+      lng: 8.337783,
     },
-    date: "25.01.2020",
+    date: "22.01.2022",
     image: stiefelinacht,
     price: "15.-",
     priceDescription: "",
-    partyUrl: "https://stiefeliryter.ch/index.php/stiefelinacht"
+    partyUrl: "https://stiefeliryter.ch/index.php/stiefelinacht.html",
   },
   {
     id: "3",
@@ -49,69 +49,69 @@ export default [
     location: {
       name: "Jonen",
       lat: 47.295974,
-      lng: 8.395064
+      lng: 8.395064,
     },
-    date: "01.02.2020",
+    date: "29.01.2022",
     image: naebelgeisternacht,
     price: "15.-",
     priceDescription: "",
-    partyUrl: "https://www.naebelgeischter.ch/näbelgeischter-nacht/"
+    partyUrl: "https://www.naebelgeischter.ch/näbelgeischter-nacht/",
   },
-  {
+  /*   {
     id: "4",
     title: "Gängeliball",
     location: {
       name: "Muri",
       lat: 47.275661,
-      lng: 8.337783
+      lng: 8.337783,
     },
     date: "20.02.2020",
     image: gaengeliball,
     price: "0.- / 14.-",
     priceDescription: "Bis 20:00 Uhr Gratiseintritt",
-    partyUrl: "https://www.gängeli.ch/verein/gaengeliball/"
-  },
+    partyUrl: "https://www.gängeli.ch/verein/gaengeliball/",
+  }, */
   {
     id: "5",
     title: "Vollgashöckler",
     location: {
       name: "Hedingen",
       lat: 47.298441,
-      lng: 8.448976
+      lng: 8.448976,
     },
-    date: "08.02.2020",
+    date: "12.02.2022",
     image: vollgashoeckler,
     price: "",
     priceDescription: "",
-    partyUrl: "https://www.vollgashoeckler.ch/Ball.html"
+    partyUrl: "https://www.vollgashoeckler.ch/Ball.html",
   },
-  {
+  /*   {
     id: "6",
     title: "Schränzerball",
     location: {
       name: "Sins",
       lat: 47.191799,
-      lng: 8.39531
+      lng: 8.39531,
     },
     date: "22.02.2020",
     image: schraenzerball,
-    price: "16.- / 25.-",
+    price: "15.- / 17.-",
     priceDescription: "Maskiert / Unmaskiert",
-    partyUrl: "https://schraenzer.ch/schraenzerball/"
-  },
+    partyUrl: "https://schraenzer.ch/schraenzerball/",
+  }, */
   {
     id: "7",
     title: "Geischterball",
     location: {
       name: "Buttwil",
       lat: 47.267594,
-      lng: 8.311205
+      lng: 8.311205,
     },
-    date: "14.02.2020",
+    date: "18.02.2022",
     image: geisterball,
     price: "",
     priceDescription: "",
-    partyUrl: "http://lindenberggeischter.ch/geischterball/"
+    partyUrl: "http://lindenberggeischter.ch/geischterball/",
   },
   {
     id: "8",
@@ -119,13 +119,13 @@ export default [
     location: {
       name: "Sarmenstorf",
       lat: 47.309921,
-      lng: 8.24856
+      lng: 8.24856,
     },
-    date: "08.02.2020",
+    date: "12.02.2022",
     image: heuroepfel,
     price: "",
     priceDescription: "",
-    partyUrl: "https://www.heuroepfel.ch/gugge/index.php/anlaesse"
+    partyUrl: "https://www.heuroepfel.ch/gugge/index.php/anlaesse",
   },
   {
     id: "9",
@@ -133,41 +133,41 @@ export default [
     location: {
       name: "Muri",
       lat: 47.275661,
-      lng: 8.337783
+      lng: 8.337783,
     },
-    date: "22.02.2020",
+    date: "26.02.2022",
     image: fantasienball,
     price: "15.- / 30.-",
     priceDescription: "",
-    partyUrl: "https://fantasienball.ch"
+    partyUrl: "https://fantasienball.ch",
   },
-  {
+  /*   {
     id: "10",
     title: "Jokerball",
     location: {
       name: "Merenschwand",
       lat: 47.260704,
-      lng: 8.373278
+      lng: 8.373278,
     },
     date: "21.02.2020",
     image: jokerball,
     price: "5.- / 25.- / 15.-",
     priceDescription: "",
-    partyUrl: "https://www.mery.ch/joker"
-  },
+    partyUrl: "https://www.mery.ch/joker",
+  }, */
   {
     id: "11",
     title: "Schüürball",
     location: {
       name: "Unterlunkhofen",
       lat: 47.322212,
-      lng: 8.38051
+      lng: 8.38051,
     },
-    date: "29.02.2020",
+    date: "05.03.2022",
     image: schueuerball,
     price: "15.-",
     priceDescription: "",
-    partyUrl: "https://www.sumpfer-stilzli.ch/index.php/schueuerball"
+    partyUrl: "https://www.sumpfer-stilzli.ch/index.php/schueuerball-menu",
   },
   {
     id: "12",
@@ -175,13 +175,13 @@ export default [
     location: {
       name: "Zwillikon",
       lat: 47.288047,
-      lng: 8.431084
+      lng: 8.431084,
     },
-    date: "07.03.2020",
+    date: "12.03.2022",
     image: maskenball,
     price: "15.-",
     priceDescription: "",
-    partyUrl: "https://maskenball-zwillikon.ch"
+    partyUrl: "https://maskenball-zwillikon.ch",
   },
   {
     id: "13",
@@ -189,42 +189,42 @@ export default [
     location: {
       name: "Urdorf",
       lat: 47.384708,
-      lng: 8.4259
+      lng: 8.4259,
     },
-    date: "29.02.2020",
+    date: "05.03.2022",
     image: urdorferfasnacht,
     price: "10.- / 20.-",
     priceDescription: "Maskiert / Unmaskiert",
-    partyUrl: "http://fasnachturdorf.ch"
+    partyUrl: "http://fasnachturdorf.ch",
   },
-  {
+  /*   {
     id: "14",
     title: "Hinterbächliball",
     location: {
       name: "Oberrohrdorf",
       lat: 47.421817,
-      lng: 8.316452
+      lng: 8.316452,
     },
     date: "22.02.2020",
     image: hinterbaechliball,
     price: "",
     priceDescription: "",
     partyUrl:
-      "https://www.rohrdorferfasnacht.ch/programm/hinterbaechliball.html"
-  },
+      "https://www.rohrdorferfasnacht.ch/programm/hinterbaechliball.html",
+  }, */
   {
     id: "15",
     title: "Drachenacht",
     location: {
       name: "Villmergen",
       lat: 47.348069,
-      lng: 8.243969
+      lng: 8.243969,
     },
-    date: "01.02.2020",
+    date: "29.01.2022",
     image: fallback,
     price: "",
     priceDescription: "",
-    partyUrl: "https://www.tinitus5612.ch/drachenacht-2020/"
+    partyUrl: "https://www.tinitus5612.ch/drachenacht-2022/",
   },
   {
     id: "16",
@@ -232,13 +232,13 @@ export default [
     location: {
       name: "Wohlen",
       lat: 47.3519831,
-      lng: 8.2792296
+      lng: 8.2792296,
     },
-    date: "01.02.2020",
+    date: "05.02.2022",
     image: fallback,
     price: "",
     priceDescription: "",
-    partyUrl: "http://www.nordfaeger.ch/Nordfaegerparty/"
+    partyUrl: "http://www.nordfaeger.ch/Nordfaegerparty/",
   },
   {
     id: "17",
@@ -246,12 +246,12 @@ export default [
     location: {
       name: "Sins",
       lat: 47.191799,
-      lng: 8.39531
+      lng: 8.39531,
     },
-    date: "07.02.2020",
+    date: "11.02.2022",
     image: fallback,
     price: "",
     priceDescription: "",
-    partyUrl: "https://www.woerger.ch/"
-  }
+    partyUrl: "https://www.woerger.ch/",
+  },
 ];
