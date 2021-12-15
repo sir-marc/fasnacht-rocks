@@ -1,6 +1,6 @@
 ### Deploy
 
-Push into `release` branch. And watch build/deploy on [Netflify](https://app.netlify.com/teams/sir-marc/builds/).
+Push into `release` branch using `git push origin master:release`. And watch build/deploy on [Netflify](https://app.netlify.com/teams/sir-marc/builds/).
 
 # Create React App
 
