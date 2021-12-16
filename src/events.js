@@ -1,4 +1,3 @@
-//import fueuerball from './assets/images/parties/fueuerball.png'
 import fallback from "./assets/images/parties/fallback.png";
 import stiefelinacht from "./assets/images/parties/stiefelinacht.png";
 import naebelgeisternacht from "./assets/images/parties/naebelgeisternacht.png";
@@ -12,7 +11,7 @@ import jokerball from "./assets/images/parties/jokerball.png";
 import schueuerball from "./assets/images/parties/schueuerball.png";
 import maskenball from "./assets/images/parties/maskenball.png";
 import urdorferfasnacht from "./assets/images/parties/urdorferfasnacht.png";
-// import hinterbaechliball from "./assets/images/parties/hinterbaechliball.jpg";
+import hinterbaechliball from "./assets/images/parties/hinterbaechliball.jpg";
 
 export default [
   {
@@ -197,7 +196,7 @@ export default [
     priceDescription: "Maskiert / Unmaskiert",
     partyUrl: "http://fasnachturdorf.ch",
   },
-  /*   {
+  {
     id: "14",
     title: "Hinterbächliball",
     location: {
@@ -205,13 +204,12 @@ export default [
       lat: 47.421817,
       lng: 8.316452,
     },
-    date: "22.02.2020",
+    date: "26.02.2022",
     image: hinterbaechliball,
     price: "",
     priceDescription: "",
-    partyUrl:
-      "https://www.rohrdorferfasnacht.ch/programm/hinterbaechliball.html",
-  }, */
+    partyUrl: "https://www.baenkli-clique.ch/hinterbaechliball/",
+  },
   {
     id: "15",
     title: "Drachenacht",
