@@ -5,7 +5,7 @@ import naebelgeisternacht from "./assets/images/parties/naebelgeisternacht.png";
 import vollgashoeckler from "./assets/images/parties/vollgashoeckler.png";
 // import schraenzerball from "./assets/images/parties/schraenzerball.png";
 import geisterball from "./assets/images/parties/geisterball.png";
-import heuroepfel from "./assets/images/parties/heuroepfel.png";
+//import heuroepfel from "./assets/images/parties/heuroepfel.png";
 import fantasienball from "./assets/images/parties/fantasienball.png";
 import jokerball from "./assets/images/parties/jokerball.png";
 import schueuerball from "./assets/images/parties/schueuerball.png";
@@ -14,7 +14,7 @@ import urdorferfasnacht from "./assets/images/parties/urdorferfasnacht.png";
 import hinterbaechliball from "./assets/images/parties/hinterbaechliball.jpg";
 
 export default [
-  {
+  /*   {
     id: "1",
     title: "Füürball",
     location: {
@@ -27,7 +27,7 @@ export default [
     price: "5.- / 10.-",
     priceDescription: "",
     partyUrl: "https://www.fuurball.ch",
-  },
+  }, */
   {
     id: "2",
     title: "Stiefelinacht",
@@ -112,7 +112,7 @@ export default [
     priceDescription: "",
     partyUrl: "http://lindenberggeischter.ch/geischterball/",
   },
-  {
+  /*   {
     id: "8",
     title: "Heuröpfel-Party",
     location: {
@@ -125,7 +125,7 @@ export default [
     price: "",
     priceDescription: "",
     partyUrl: "https://www.heuroepfel.ch/gugge/index.php/anlaesse",
-  },
+  }, */
   {
     id: "9",
     title: "Fantasienball",
