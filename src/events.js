@@ -252,4 +252,18 @@ export default [
     priceDescription: "",
     partyUrl: "https://www.woerger.ch/",
   },
+  {
+    id: "18",
+    title: "Mugumu-Ball",
+    location: {
+      name: "Sins",
+      lat: 47.165977,
+      lng: 8.394449,
+    },
+    date: "19.02.2022",
+    image: fallback,
+    price: "",
+    priceDescription: "",
+    partyUrl: "http://mugumu.ch/",
+  },
 ];
