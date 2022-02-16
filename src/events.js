@@ -256,9 +256,9 @@ export default [
     id: "18",
     title: "Mugumu-Ball",
     location: {
-      name: "Sins",
-      lat: 47.165977,
-      lng: 8.394449,
+      name: "Oberrüti",
+      lat: 47.16647282213088,
+      lng: 8.395174425291518,
     },
     date: "19.02.2022",
     image: fallback,
