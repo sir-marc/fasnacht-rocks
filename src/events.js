@@ -134,7 +134,7 @@ export default [
       lat: 47.275661,
       lng: 8.337783,
     },
-    date: "26.02.2022",
+    date: "18.02.2023",
     image: fantasienball,
     price: "15.- / 30.-",
     priceDescription: "",
