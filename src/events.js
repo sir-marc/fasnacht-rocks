@@ -1,11 +1,11 @@
 import fallback from "./assets/images/parties/fallback.png";
 import stiefelinacht from "./assets/images/parties/stiefelinacht.png";
 import naebelgeisternacht from "./assets/images/parties/naebelgeisternacht.png";
-// import gaengeliball from "./assets/images/parties/gaengeliball.png";
+import gaengeliball from "./assets/images/parties/gaengeliball.png";
 import vollgashoeckler from "./assets/images/parties/vollgashoeckler.png";
-// import schraenzerball from "./assets/images/parties/schraenzerball.png";
+import schraenzerball from "./assets/images/parties/schraenzerball.png";
 import geisterball from "./assets/images/parties/geisterball.png";
-//import heuroepfel from "./assets/images/parties/heuroepfel.png";
+import heuroepfel from "./assets/images/parties/heuroepfel.png";
 import fantasienball from "./assets/images/parties/fantasienball.png";
 import jokerball from "./assets/images/parties/jokerball.png";
 import schueuerball from "./assets/images/parties/schueuerball.png";
@@ -56,7 +56,7 @@ export default [
     priceDescription: "",
     partyUrl: "https://www.naebelgeischter.ch/näbelgeischter-nacht/",
   },
-  /*   {
+  {
     id: "4",
     title: "Gängeliball",
     location: {
@@ -64,12 +64,12 @@ export default [
       lat: 47.275661,
       lng: 8.337783,
     },
-    date: "20.02.2020",
+    date: "16.02.2023",
     image: gaengeliball,
     price: "0.- / 14.-",
     priceDescription: "Bis 20:00 Uhr Gratiseintritt",
     partyUrl: "https://www.gängeli.ch/verein/gaengeliball/",
-  }, */
+  },
   {
     id: "5",
     title: "Vollgashöckler",
@@ -84,7 +84,7 @@ export default [
     priceDescription: "",
     partyUrl: "https://www.vollgashoeckler.ch/Ball.html",
   },
-  /*   {
+  {
     id: "6",
     title: "Schränzerball",
     location: {
@@ -92,12 +92,12 @@ export default [
       lat: 47.191799,
       lng: 8.39531,
     },
-    date: "22.02.2020",
+    date: "28.02.2023",
     image: schraenzerball,
     price: "15.- / 17.-",
     priceDescription: "Maskiert / Unmaskiert",
     partyUrl: "https://schraenzer.ch/schraenzerball/",
-  }, */
+  },
   {
     id: "7",
     title: "Geischterball",
@@ -112,7 +112,7 @@ export default [
     priceDescription: "",
     partyUrl: "http://lindenberggeischter.ch/geischterball/",
   },
-  /*   {
+  {
     id: "8",
     title: "Heuröpfel-Party",
     location: {
@@ -120,12 +120,12 @@ export default [
       lat: 47.309921,
       lng: 8.24856,
     },
-    date: "12.02.2022",
+    date: "04.02.2022",
     image: heuroepfel,
     price: "",
     priceDescription: "",
     partyUrl: "https://www.heuroepfel.ch/gugge/index.php/anlaesse",
-  }, */
+  },
   {
     id: "9",
     title: "Fantasienball",
@@ -176,7 +176,7 @@ export default [
       lat: 47.288047,
       lng: 8.431084,
     },
-    date: "12.03.2022",
+    date: "04.03.2023",
     image: maskenball,
     price: "15.-",
     priceDescription: "",
@@ -265,5 +265,19 @@ export default [
     price: "",
     priceDescription: "",
     partyUrl: "http://mugumu.ch/",
+  },
+  {
+    id: "19",
+    title: "Grufti Bar",
+    location: {
+      name: "Windisch",
+      lat: 47.477921,
+      lng: 8.21668,
+    },
+    date: "25.02.2023",
+    image: fallback,
+    price: "",
+    priceDescription: "",
+    partyUrl: "http://gruftis-windisch.ch",
   },
 ];
