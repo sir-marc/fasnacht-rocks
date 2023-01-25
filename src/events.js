@@ -278,6 +278,20 @@ export default [
     image: fallback,
     price: "",
     priceDescription: "",
-    partyUrl: "http://gruftis-windisch.ch",
+    partyUrl: "//gruftis-windisch.ch",
+  },
+  {
+    id: "20",
+    title: "Ulaladoga",
+    location: {
+      name: "Windisch",
+      lat: 47.477921,
+      lng: 8.21668,
+    },
+    date: "11.02.2023",
+    image: fallback,
+    price: "",
+    priceDescription: "",
+    partyUrl: "https://trombongos.ch/ulaladoga/",
   },
 ];
