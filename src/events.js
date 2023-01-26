@@ -120,7 +120,7 @@ export default [
       lat: 47.309921,
       lng: 8.24856,
     },
-    date: "04.02.2022",
+    date: "04.02.2023",
     image: heuroepfel,
     price: "",
     priceDescription: "",
