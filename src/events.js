@@ -294,4 +294,18 @@ export default [
     priceDescription: "",
     partyUrl: "https://trombongos.ch/ulaladoga/",
   },
+  {
+    id: "20",
+    title: "Kammerball",
+    location: {
+      name: "Wohlen",
+      lat: 47.3519831,
+      lng: 8.2792296,
+    },
+    date: "10.02.2024",
+    image: fallback,
+    price: "",
+    priceDescription: "",
+    partyUrl: "https://kammergesellschaft.ch/",
+  },
 ];
