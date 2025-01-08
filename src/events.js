@@ -302,7 +302,7 @@ export default [
             lat: 47.3519831,
             lng: 8.2792296,
         },
-        date: "01.03.2025",
+        date: "01.02.2025",
         image: fallback,
         price: "",
         priceDescription: "",
