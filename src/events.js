@@ -13,7 +13,7 @@ import maskenball from "./assets/images/parties/maskenball.png";
 import urdorferfasnacht from "./assets/images/parties/urdorferfasnacht.png";
 import hinterbaechliball from "./assets/images/parties/hinterbaechliball.jpg";
 
-export default [
+const events = [
     {
         id: "1",
         title: "Füürball",
@@ -309,3 +309,5 @@ export default [
         partyUrl: "https://kammergesellschaft.ch/",
     },
 ];
+
+export default events;

@@ -6,7 +6,6 @@ import DateNav from "./components/date-nav";
 import Header from "./components/header";
 import Content from "./components/content";
 import ResetButton from "./components/reset-button";
-import LocationSearch from "./components/location-search";
 import EventList from "./components/events/event-list";
 import rawEvents from "./events";
 import { dedupe } from "./helpers/array";
@@ -22,7 +21,7 @@ const events = rawEvents.sort((a, b) => {
 function App() {
     const [dateFilter, setDateFilter] = useState();
     const [locationFilter, setLocationFilter] = useState();
-    const [distanceFilter, setDistanceFilter] = useState(3);
+    const [distanceFilter] = useState(3);
     const [scrollOffset, setScrollOffset] = useState(0);
 
     const headerElement = useRef(null);
