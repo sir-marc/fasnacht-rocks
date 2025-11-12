@@ -7,25 +7,30 @@ import Day from "./day";
 import Month from "./month";
 
 function DateNav({ dates, dateFilter, setFilter }) {
-  return (
-    <Container>
-      {dates.map(date => {
-        const dateString = date.valueOf();
-        return (
-          <DateEntry
-            key={dateString}
-            isActive={dateString === dateFilter}
-            onClick={() => setFilter(dateString)}
-          >
-            <WeekDay>{format(date, "E")}.</WeekDay>
-            <Day>{format(date, "dd")}</Day>
-            <Month>{format(date, "MMM")}.</Month>
-          </DateEntry>
-        );
-      })}
-      <div></div>
-    </Container>
-  );
+    const latestYear =
+        dates && dates.length ? Math.max(...dates.map((date) => date.getFullYear())) : null;
+    const filteredDates =
+        latestYear !== null ? dates.filter((date) => date.getFullYear() === latestYear) : [];
+
+    return (
+        <Container>
+            {filteredDates.map((date) => {
+                const dateString = date.valueOf();
+                return (
+                    <DateEntry
+                        key={dateString}
+                        isActive={dateString === dateFilter}
+                        onClick={() => setFilter(dateString)}
+                    >
+                        <WeekDay>{format(date, "E")}.</WeekDay>
+                        <Day>{format(date, "dd")}</Day>
+                        <Month>{format(date, "MMM")}.</Month>
+                    </DateEntry>
+                );
+            })}
+            <div></div>
+        </Container>
+    );
 }
 
 export default DateNav;
