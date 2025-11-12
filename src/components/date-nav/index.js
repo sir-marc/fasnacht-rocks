@@ -19,7 +19,7 @@ function DateNav({ dates, dateFilter, setFilter }) {
                 return (
                     <DateEntry
                         key={dateString}
-                        isActive={dateString === dateFilter}
+                        $isActive={dateString === dateFilter}
                         onClick={() => setFilter(dateString)}
                     >
                         <WeekDay>{format(date, "E")}.</WeekDay>

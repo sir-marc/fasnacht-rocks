@@ -295,7 +295,7 @@ const events = [
         partyUrl: "https://trombongos.ch/ulaladoga/",
     },
     {
-        id: "20",
+        id: "21",
         title: "Kammerball",
         location: {
             name: "Wohlen",

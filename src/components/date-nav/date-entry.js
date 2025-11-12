@@ -2,35 +2,35 @@ import styled from "styled-components";
 const padding = "15px";
 
 export default styled.button`
-  height: 100%;
+    height: 100%;
 
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
 
-  margin: 0 ${padding};
+    margin: 0 ${padding};
 
-  opacity: 0.45;
-  cursor: pointer;
+    opacity: 0.45;
+    cursor: pointer;
 
-  background: 0;
-  border: 0;
+    background: 0;
+    border: 0;
 
-  &:last-child {
-    padding-right: ${padding};
-  }
+    &:last-child {
+        padding-right: ${padding};
+    }
 
-  span {
-    display: block;
-    text-align: center;
+    span {
+        display: block;
+        text-align: center;
 
-    color: #bfbfbf;
-  }
+        color: #bfbfbf;
+    }
 
-  ${({ isActive }) =>
-    isActive
-      ? `
+    ${({ $isActive }) =>
+        $isActive
+            ? `
         opacity: 1;
         position: relative;
 
@@ -56,5 +56,5 @@ export default styled.button`
           box-shadow: 0 0 50px 7px rgba(255, 255, 255, 0.5);
         }
       `
-      : ""}
+            : ""}
 `;

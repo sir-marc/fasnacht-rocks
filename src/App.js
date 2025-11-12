@@ -38,8 +38,7 @@ function App() {
         setLocationFilter(undefined);
     };
 
-    const filterIsSet = () =>
-        !![dateFilter, locationFilter].some((filterValue) => !!filterValue);
+    const filterIsSet = () => !![dateFilter, locationFilter].some((filterValue) => !!filterValue);
 
     const dates = dedupe(events.map(({ date }) => date)).map(parseDate);
 
@@ -48,7 +47,7 @@ function App() {
             <div className="App">
                 <Header ref={headerElement}></Header>
                 <ResetButton
-                    show={filterIsSet()}
+                    $show={filterIsSet()}
                     onClick={() => resetFilters()}
                     tabIndex={filterIsSet() ? 0 : -1}
                 >
@@ -66,11 +65,7 @@ function App() {
                     />
                     <ProposeEventTeaser />
                 </Content>
-                <DateNav
-                    dates={dates}
-                    setFilter={setDateFilter}
-                    dateFilter={dateFilter}
-                />
+                <DateNav dates={dates} setFilter={setDateFilter} dateFilter={dateFilter} />
             </div>
         </ThemeProvider>
     );
