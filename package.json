@@ -16,7 +16,9 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "deploy": "git push origin master:release"
+        "release": "git push origin master:release",
+        "generate-ics": "node scripts/generate-ics.js",
+        "deploy": "npm run generate-ics && npm run release"
     },
     "eslintConfig": {
         "extends": "react-app",
@@ -38,6 +40,7 @@
     },
     "devDependencies": {
         "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "ics": "^3.8.1",
         "netlify-cli": "^18.0.0",
         "sass": "^1.45.0"
     }
