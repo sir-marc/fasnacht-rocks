@@ -50,7 +50,7 @@ const events = [
             lat: 47.295974,
             lng: 8.395064,
         },
-        date: "01.02.2025",
+        date: "24.01.2026",
         image: naebelgeisternacht,
         price: "15.-",
         priceDescription: "",
