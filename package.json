@@ -18,7 +18,7 @@
         "eject": "react-scripts eject",
         "release": "git push origin master:release",
         "generate-ics": "node scripts/generate-ics.js",
-        "deploy": "npm run generate-ics && npm run release"
+        "deploy": "npm run generate-ics && git add public/events.ics && git commit -m 'Update events.ics' && npm run release"
     },
     "eslintConfig": {
         "extends": "react-app",
